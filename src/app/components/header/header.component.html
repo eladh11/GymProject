@@ -1,0 +1,27 @@
+<div>
+  <img src="../../../assets/logo.png" />
+</div>
+<h1>HOW TO FIT?</h1>
+
+<div class="btn">
+  <button *ngIf="!login()" mat-raised-button color="warn" (click)="logout()">
+    Logout
+  </button>
+
+  <button
+    *ngIf="login()"
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/login']"
+  >
+    Login
+  </button>
+  <button
+    *ngIf="login()"
+    mat-raised-button
+    color="basic"
+    [routerLink]="['/create-account']"
+  >
+    Create Account
+  </button>
+</div>

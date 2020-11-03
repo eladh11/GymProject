@@ -1,0 +1,54 @@
+<div class="leftpane"><app-aside-company></app-aside-company></div>
+<div class="middlepane">
+  <div>
+    <button name="send" [routerLink]="['/add-gym']">
+      Add Gym <mat-icon>add</mat-icon>
+    </button>
+
+    <table>
+      <tr>
+        <th>Company ID:</th>
+        <th>City:</th>
+        <th>Edit:</th>
+      </tr>
+
+      <tr *ngFor="let gym of gyms">
+        <td *ngIf="gym.companyID === id">
+          {{ gym.companyID }}
+        </td>
+
+        <td *ngIf="gym.id === editRowID">
+          <input type="text" [(ngModel)]="gym.city" />
+        </td>
+        <td
+          *ngIf="gym.id !== editRowID && gym.companyID === id"
+          (click)="Edit(gym.id)"
+        >
+          <a routerLink="/gym-details/{{ gym.id }}">
+            {{ gym.city }}
+          </a>
+        </td>
+
+        <td *ngIf="gym.companyID === id">
+          <button
+            (click)="deleteGym(gym.id)"
+            mat-fab
+            color="warn"
+            aria-label="Example icon button with a delete icon"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+
+          <button
+            (click)="updateGym(gym)"
+            mat-fab
+            color="primary"
+            aria-label="Example icon button with a edit icon"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div>
+  <h3>Add Gym:</h3>
+
+  <form #FormInfo="ngForm">
+    <input
+      type="text"
+      #CompanyID="ngModel"
+      required
+      disabled
+      value="{{ id }}"
+      [(ngModel)]="gym.companyID"
+      name="companyID"
+    />
+
+    <br /><br />
+
+    <input
+      #City="ngModel"
+      required
+      type="text"
+      placeholder="City..."
+      [(ngModel)]="gym.city"
+      name="city"
+    />
+    <span *ngIf="City.invalid && City.touched">Missing City...</span>
+
+    <br /><br />
+
+    <button name="send" [disabled]="!FormInfo.form.valid" (click)="addGym()">
+      Add Gym
+    </button>
+    <button name="send" [routerLink]="['/get-all-gyms']">
+      Back to All Gyms
+    </button>
+  </form>
+</div>

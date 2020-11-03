@@ -1,0 +1,45 @@
+<div>
+  <span>Change First Name:</span>
+  <h3 *ngIf="user.id === editRowID">
+    <input type="text" [(ngModel)]="user.first" />
+  </h3>
+  <h3 *ngIf="user.id !== editRowID" (click)="Edit(user.id)">
+    {{ user.first }}
+  </h3>
+
+  <span>Change Last Name:</span>
+  <h3 *ngIf="user.id === editRowID">
+    <input type="text" [(ngModel)]="user.last" />
+  </h3>
+  <h3 *ngIf="user.id !== editRowID" (click)="Edit(user.id)">
+    {{ user.last }}
+  </h3>
+
+  <h3>Email: {{ user.email }}</h3>
+
+  <span>Change Password:</span>
+  <h3 *ngIf="user.id === editRowID">
+    <input type="text" [(ngModel)]="user.password" />
+  </h3>
+  <h3 *ngIf="user.id !== editRowID" (click)="Edit(user.id)">
+    {{ user.password }}
+  </h3>
+
+  <button
+    (click)="updateUser(user)"
+    mat-fab
+    color="primary"
+    aria-label="Example icon button with a edit icon"
+  >
+    Update
+  </button>
+  <button
+    (click)="backClicked()"
+    mat-fab
+    color="basic"
+    aria-label="Example icon button with a edit icon"
+  >
+    Go Back
+  </button>
+  <br /><br />
+</div>

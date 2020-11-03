@@ -1,0 +1,27 @@
+<div>
+  <h3>ID: {{ company.id }}</h3>
+  <h3>Name: {{ company.name }}</h3>
+  <h3>Email: {{ company.email }}</h3>
+  <h3>Password: {{ company.password }}</h3>
+  <span>Change Password:</span>
+  <h3 *ngIf="company.id === editRowID">
+    <input type="text" [(ngModel)]="company.password" />
+  </h3>
+  <h3 *ngIf="company.id !== editRowID" (click)="Edit(company.id)">
+    {{ company.password }}
+  </h3>
+
+  <button
+    (click)="updateCompany(company)"
+    mat-fab
+    color="primary"
+    aria-label="Example icon button with a edit icon"
+  >
+    Update
+  </button>
+  <br /><br />
+
+  <a [routerLink]="['/get-all-gyms']" routerLinkActive="router-link-active"
+    >Back to My Gyms List</a
+  >
+</div>

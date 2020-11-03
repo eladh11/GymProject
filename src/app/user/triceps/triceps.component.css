@@ -1,0 +1,64 @@
+.leftpane {
+  width: 25%;
+  height: 50%;
+  float: left;
+  background-color: white;
+  border-collapse: collapse;
+  font-style: italic;
+}
+
+.middlepane {
+  width: 75%;
+  height: 100%;
+  float: left;
+  background-color: aqua;
+  border-collapse: collapse;
+}
+body {
+  background: #fafafa url(https://jackrugile.com/images/misc/noise-diagonal.png);
+  color: #444;
+  font: 100%/30px "Helvetica Neue", helvetica, arial, sans-serif;
+  text-shadow: 0 1px 0 #fff;
+}
+
+div {
+  height: 85%;
+  overflow: auto;
+  text-align: center;
+}
+p {
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10pt;
+  margin: 25px;
+  padding: 5px;
+}
+h2 {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h4 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.hh4 {
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
