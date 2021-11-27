@@ -4,3 +4,19 @@ div {
 input {
   background-color: aqua;
 }
+.leftpane {
+  width: 25%;
+  height: 30%;
+  float: left;
+  background-color: aqua;
+  border-collapse: collapse;
+  font-style: italic;
+}
+
+.middlepane {
+  width: 75%;
+  height: 100%;
+  float: left;
+  background-color: aqua;
+  border-collapse: collapse;
+}

@@ -47,6 +47,7 @@ import { LegsComponent } from './user/legs/legs.component';
 import { ChestComponent } from './user/chest/chest.component';
 import { AbsComponent } from './user/abs/abs.component';
 import { CardioComponent } from './user/cardio/cardio.component';
+import { P404Component } from './components/p404/p404.component';
  
  
  
@@ -85,6 +86,7 @@ import { CardioComponent } from './user/cardio/cardio.component';
     ChestComponent,
     AbsComponent,
     CardioComponent,
+    P404Component,
   
   ],
   imports: [

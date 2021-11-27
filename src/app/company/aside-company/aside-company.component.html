@@ -1,3 +1,25 @@
-<a [routerLink]="['/get-all-gyms']">Get All Gyms</a>
+<!-- <a [routerLink]="['/get-all-gyms']">Get All Gyms</a>
 <a [routerLink]="['/add-gym']">Add Gym</a>
-<a routerLink="/company-details/{{ company.id }}">My Details</a>
+<a routerLink="/company-details/{{ company.id }}">My Details</a> -->
+
+<div class="sidebar-container">
+  <div class="sidebar-logo">How To Fit?</div>
+  <ul class="sidebar-navigation">
+    <li class="header">Welcome: {{ company.name }}</li>
+    <li>
+      <a [routerLink]="['/get-all-gyms']">
+        <i class="fa fa-plus" aria-hidden="true"></i>Get All Gyms
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/add-gym']">
+        <i class="fa fa-plus" aria-hidden="true"></i> Add Gym
+      </a>
+    </li>
+    <li>
+      <a routerLink="/company-details/{{ company.id }}">
+        <i class="fa fa-users" aria-hidden="true"></i> My Details
+      </a>
+    </li>
+  </ul>
+</div>

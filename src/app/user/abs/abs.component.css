@@ -2,7 +2,7 @@
   width: 25%;
   height: 50%;
   float: left;
-  background-color: white;
+  background-color: aqua;
   border-collapse: collapse;
   font-style: italic;
 }
@@ -11,7 +11,7 @@
   width: 75%;
   height: 100%;
   float: left;
-  background-color: white;
+  background-color: aqua;
   border-collapse: collapse;
 }
 body {

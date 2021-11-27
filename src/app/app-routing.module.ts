@@ -23,11 +23,12 @@ import { AdminComponent } from './admin/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { P404Component } from './components/p404/p404.component';
 
 const routes: Routes = [
   
   { path: 'login', component: LoginComponent },
-  { path: 'admin', component: AdminComponent },
+  { path: 'admin-token-for-securityy', component: AdminComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'user', component: UserComponent },
   { path: 'get-all-gyms', component: GetAllGymsComponent },
@@ -50,7 +51,8 @@ const routes: Routes = [
   { path: 'biceps', component: BicepsComponent },
   { path: 'cardio', component: CardioComponent },
   { path: '', component: LoginComponent , pathMatch: 'full'},
-  { path: '**', component: LoginComponent, pathMatch: 'full'},
+  { path: '**', component: P404Component, pathMatch: 'full'},
+
 ];
 
 @NgModule({

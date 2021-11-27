@@ -18,11 +18,7 @@ export class SignupCompanyComponent   {
     private adminService: AdminService,
     private router: Router
   ) {}
-  
-
-  
-
-  public addCompany(): void {
+   public addCompany(): void {
     this.adminService.addCompany(this.company).subscribe(
       (c) => {
         alert('Company:' + this.company.name + ' as added !');
@@ -41,4 +37,8 @@ export class SignupCompanyComponent   {
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 }
+
+
+
+
 

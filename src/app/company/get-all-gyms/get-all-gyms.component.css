@@ -1,8 +1,8 @@
 .leftpane {
   width: 25%;
-  height: 100%;
+  height: 30%;
   float: left;
-  background-color: white;
+  background-color: aqua;
   border-collapse: collapse;
   font-style: italic;
 }

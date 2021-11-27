@@ -1,6 +1,7 @@
 img {
   width: 10%;
-  margin-left: 60%;
+  margin-left: 65%;
+  margin-top: 30px;
 }
 
 div {
@@ -19,5 +20,13 @@ h1 {
 
 .btn {
   text-align: right;
-  margin-top: -40px;
+  margin-top: -320px;
+}
+.btn button {
+  margin-top: 150px;
+  margin-left: 20px;
+}
+.stam {
+  background-color: aqua;
+  font-weight: bold;
 }

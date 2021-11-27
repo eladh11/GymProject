@@ -1,10 +1,51 @@
-<h3>Full Workout:</h3>
-<a routerLink="/user-details/{{ user.id }}">My Details</a>
-<a routerLink="/chest">Chest</a>
-<a routerLink="/legs">Legs</a>
-<a routerLink="/back">Back</a>
-<a routerLink="/triceps">Triceps</a>
-<a routerLink="/biceps">Biceps</a>
-<a routerLink="/shoulder">Shoulder</a>
-<a routerLink="/cardio">Cardio</a>
-<a routerLink="/abs">Abs</a>
+<div class="sidebar-container">
+  <div class="sidebar-logo">How To Fit?</div>
+  <ul class="sidebar-navigation">
+    <li class="header">Welcome: {{ user.first }}</li>
+    <li>
+      <a routerLink="/user-details/{{ user.id }}">
+        <i class="fa fa-minus" aria-hidden="true"></i>My Details
+      </a>
+    </li>
+    <li>
+      <a routerLink="/chest">
+        <i class="fa fa-minus" aria-hidden="true"></i> Chest
+      </a>
+    </li>
+    <li>
+      <a routerLink="/legs">
+        <i class="fa fa-minus" aria-hidden="true"></i> Legs
+      </a>
+    </li>
+    <li>
+      <a routerLink="/back">
+        <i class="fa fa-minus" aria-hidden="true"></i> Back
+      </a>
+    </li>
+    <li>
+      <a routerLink="/triceps">
+        <i class="fa fa-minus" aria-hidden="true"></i> Triceps
+      </a>
+    </li>
+    <li>
+      <a routerLink="/biceps">
+        <i class="fa fa-minus" aria-hidden="true"></i> Biceps
+      </a>
+    </li>
+    <li>
+      <a routerLink="/shoulder">
+        <i class="fa fa-minus" aria-hidden="true"></i> Shoulder
+      </a>
+    </li>
+    <li>
+      <a routerLink="/cardio">
+        <i class="fa fa-minus" aria-hidden="true"></i> Cardio
+      </a>
+    </li>
+    <li>
+      <a routerLink="/abs">
+        <i class="fa fa-minus" aria-hidden="true"></i> Abs
+      </a>
+    </li>
+  </ul>
+</div>

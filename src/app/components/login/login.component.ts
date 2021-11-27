@@ -23,14 +23,21 @@ export class LoginComponent implements OnInit {
   public loginToServer(): void {
     this.loginService.loginRequest(this.credentials).subscribe(
       (loginResult) => {
-        alert(loginResult.token + ' ' + loginResult.type);
+        alert("Token: "+ loginResult.token + ' ' + loginResult.type);
         this.loginService.token = loginResult.token;
         this.loginService.type = loginResult.type;
         this.loginService.isLoggedIn = true;
         this.loginService.log = false;
         this.loginService.email = this.credentials.email;
+        if(this.loginService.type==='user'){
+          this.router.navigateByUrl('/chest');
+      }else if(this.loginService.type==='admin'){
+        this.router.navigateByUrl('/admin-token-for-securityy');
+    }else{
         this.router.navigateByUrl(this.loginService.type);
-      },
+      }
+      
+       },
       (err) => {
         alert('wrong details :(');
       }

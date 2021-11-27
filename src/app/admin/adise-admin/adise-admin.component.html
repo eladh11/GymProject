@@ -1,4 +1,26 @@
-<a [routerLink]="['/add-company']">Add Company</a>
-<a [routerLink]="['/add-customer']">Add Customer</a>
-<a [routerLink]="['/get-all-companies']">Get All Companies</a>
-<a [routerLink]="['/get-all-customers']">Get All Customers</a>
+<div class="sidebar-container">
+  <div class="sidebar-logo">How To Fit?</div>
+  <ul class="sidebar-navigation">
+    <li class="header">Admin</li>
+    <li>
+      <a [routerLink]="['/add-company']">
+        <i class="fa fa-plus" aria-hidden="true"></i> Add Company
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/add-customer']">
+        <i class="fa fa-plus" aria-hidden="true"></i> Add Customer
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/get-all-companies']">
+        <i class="fa fa-users" aria-hidden="true"></i> Get All Companies
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/get-all-customers']">
+        <i class="fa fa-users" aria-hidden="true"></i> Get All Customers
+      </a>
+    </li>
+  </ul>
+</div>
