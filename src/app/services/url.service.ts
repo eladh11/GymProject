@@ -1,28 +1,32 @@
 import { Injectable } from '@angular/core';
+import { Env } from './../../environments/Env';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UrlService {
 
-  public BASE_URL = 'http://localhost:';
-  public PORT = 8082;
+  // public BASE_URL = 'http://localhost:';
+  // public PORT = 8082;
+  // public admin = '/admin/';
+  // public user = '/user/';
+  // public company = '/company/';
 
-  public admin = '/admin/';
-  public user = '/user/';
-  public company = '/company/';
+  public admin =Env.URL+'admin/';
+  public user = Env.URL+'user/';
+  public company = Env.URL+'company/';
   public constructor() {}
 
   public getAdminURL(): string {
-    return this.BASE_URL + this.PORT + this.admin;
+    return this.admin;
   }
 
   public getUserURL(): string {
-    return this.BASE_URL + this.PORT + this.user;
+    return this.user;
   }
 
   public getACompanyURL(): string {
-    return this.BASE_URL + this.PORT + this.company;
+    return this.company;
   }
 
   public getURL(type: string): string {
